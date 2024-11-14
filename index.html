@@ -5,10 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/output.css">
 </head>
 
 <body>
-
+    <header>
+        <nav class="flex justify-between max-w-6xl mx-auto px-4 py-2 items-center">
+            <a href="#" class="text-xl md:text-3xl font-raleway font-bold">P-Ticket</a>
+            <div id="nav-menu" class="md:flex gap-10 hidden ">
+                <a href="#" class="font-raleway text-lg font-normal">Home</a>
+                <a href="#" class="font-raleway text-lg font-normal">About</a>
+                <a href="#" class="font-raleway text-lg font-normal">Destination</a>
+                <a href="#" class="font-raleway text-lg font-normal">Search</a>
+            </div>
+            <button
+                class="md:flex gap-2 text-lg items-center bg-[#1DD1001A] hover:bg-[#1DD10066] px-4 py-2 rounded border border-[#1DD10066] uppercase hidden hover:text-white">
+                <span>Bus</span>
+                <img src="images/bus-icon.svg" alt="">
+            </button>
+            <button class="text-2xl md:hidden"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+    <main>
+        <section
+            class="max-w-6xl mx-auto px-4 py-2 bg-[url('../images/banner.png')] min-h-[570px] bg-cover bg-center rounded-2xl mt-4 flex flex-col items-center justify-center gap-5"
+            id="hero">
+            <h1 class="text-center text-6xl font-bold text-white leading-snug">End-to-End Travel with <br>
+                <span class="text-green">P Paribahan</span>
+            </h1>
+            <p class="text-white text-center leading-normal">Yes, you can run unit tests and view the results directly
+                within the app.
+                <br>The
+                integrated testing features allow for a streamlined .
+            </p>
+            <button class="btn bg-green text-black border-0 text-xl hover:text-white leading-none">Buy
+                Tickets</button>
+        </section>
+    </main>
 </body>
 
 </html>
