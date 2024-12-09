@@ -13,6 +13,10 @@ module.exports = {
       BackgroundImage: {
         "hero-bg": "url(./images/banner.png)",
       },
+
+      boxShadow: {
+        "custom-shadow": "0px 2px 0px 0 #1DD100",
+      },
     },
   },
   plugins: [require("daisyui")],
