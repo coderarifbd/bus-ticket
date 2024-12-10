@@ -324,29 +324,31 @@
                                 <h3 id="total">0</h3>
                             </div>
                             <div class="relative">
-                                <input type="text" name="coupon" id="coupon"
+                                <input type="text" name="coupon" id="coupon-input"
                                     class="w-full py-2 rounded-lg border px-4 focus:outline-none"
-                                    placeholder="Have any copupon?">
+                                    placeholder="Have any coupon?">
                                 <input type="submit" value="Apply"
-                                    class="w-1/4 bg-green text-white py-2 rounded-lg absolute right-0 top-[1px] hover:cursor-pointer">
+                                    class="w-1/4 bg-green text-white py-2 rounded-lg absolute right-0 top-[1px] hover:cursor-pointer"
+                                    id="apply-coupon">
                             </div>
 
                             <div class="flex justify-between border-t pt-3">
                                 <h3>Grand total</h3>
-                                <h3>1100</h3>
+                                <h3 id="grand-total">0</h3>
                             </div>
                         </div>
                     </div>
                     <div class="mt-4">
-                        <form>
+                        <form action="">
                             <label class="gap-2 block mb-1">Passenger Name *</label>
-                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full"
+                                required />
                             <label class="gap-2 block my-1">Phone Number *</label>
                             <input type="number" placeholder="Enter your Phone Number"
-                                class="input input-bordered w-full" />
+                                class="input input-bordered w-full" required />
                             <label class="gap-2 block my-1">Email Id *</label>
                             <input type="email" placeholder="Enter your email" class="input input-bordered w-full" />
-                            <input type="submit" value="Next" class="input w-full mt-3 bg-green text-white" />
+                            <input type="submit" value="Next" class="input w-full mt-3 bg-green text-white" required />
                         </form>
                         <div class="flex justify-around mt-3">
                             <a href="#" class="underline">Terms and Conditions</a>

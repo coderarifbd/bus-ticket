@@ -1,6 +1,9 @@
 // console.log("alert");
 
+const couponCode = "get20";
+
 const sitName = document.getElementsByClassName("kbd");
+const grandTotal = document.getElementById("grand-total");
 let sitNumber = "";
 
 for (let i = 0; i < sitName.length; i++) {
@@ -9,6 +12,18 @@ for (let i = 0; i < sitName.length; i++) {
     sitConfimation(sitName[i]);
   });
 }
+
+const applyCoupon = document.getElementById("apply-coupon");
+applyCoupon.addEventListener("click", function () {
+  const total = document.getElementById("total").innerText;
+  //   console.log(typeof total);
+  const couponCodeValue = document.getElementById("coupon-input").value;
+  if (couponCode == couponCodeValue) {
+    const discount = (20 / 100) * parseFloat(total);
+    const afterDiscount = total - discount;
+    grandTotal.innerText = afterDiscount;
+  }
+});
 
 function sitConfimation(sit) {
   const sitId = sit.innerHTML;
@@ -36,4 +51,5 @@ function sitConfimation(sit) {
 function totalCalculation(s) {
   const total = document.getElementById("total");
   total.innerText = 550 * s;
+  grandTotal.innerText = 550 * s;
 }
